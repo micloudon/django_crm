@@ -35,6 +35,7 @@
 					<th>Product</th>
 					<th>Date Ordered</th>
 					<th>Status</th>
+					<th>Quantity</th>
 					<th>Update</th>
 					<th>Remove</th>
 				</tr>
@@ -47,6 +48,7 @@
 						<td>{{ order.date_created }}</td>
 						{% endtimezone %}
 						<td>{{ order.status }}</td>
+						<td>{{ order.quantity }}</td>
 						<td><a href="{% url 'update_order' order.id %}" class="btn btn-sm btn-success">update</a></td>
 						<td><a href="{% url 'delete_order' order.id %}" class="btn btn-sm btn-danger">delete</a></td>
 

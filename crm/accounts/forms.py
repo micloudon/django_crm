@@ -13,10 +13,16 @@ class CustomerForm(ModelForm):
         fields = '__all__'
 
 
+nums = [tuple([x,x]) for x in range(1,32)]
+
 class OrderForm(ModelForm):
     class Meta:
         model = Order
         fields = '__all__'
+        widgets = {
+        'quantity': forms.Select(choices=nums)
+        }
+
 
 
 class CreateUserForm(UserCreationForm):

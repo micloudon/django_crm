@@ -27,7 +27,7 @@ SECRET_KEY = config('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = config('DEBUG')
 
-ALLOWED_HOSTS = ['*','djangodatabase.cqjvdehdtujm.us-west-2.rds.amazonaws.com']
+ALLOWED_HOSTS = ['*', config('DB_URL')]
 
 
 # Application definition
@@ -43,6 +43,9 @@ INSTALLED_APPS = [
 
     # our apps
     'accounts.apps.AccountsConfig',
+    'customer',
+    'product.apps',
+    'orders',
     
     # installed by us
     'django_filters',
@@ -155,21 +158,3 @@ EMAIL_PORT = config('EMAIL_PORT')
 EMAIL_USE_TLS = config('EMAIL_USE_TLS')
 EMAIL_HOST_USER = config('EMAIL_HOST_USER')
 EMAIL_HOST_PASSWORD = config('EMAIL_HOST_PASSWORD')
-
-# S3 bucket config
-
-# AWS_ACCESS_KEY_ID = config('AWS_ACCESS_KEY_ID')
-# AWS_SECRET_ACCESS_KEY = config('AWS_SECRET_ACCESS_KEY')
-# AWS_STORAGE_BUCKET_NAME = config('AWS_STORAGE_BUCKET_NAME')
-# AWS_S3_CUSTOM_DOMAIN = '%s.s3.amazonaws.com' % AWS_STORAGE_BUCKET_NAME
-# AWS_S3_OBJECT_PARAMETERS = {'CacheControl': 'max-age=86400'}
-# AWS_LOCATION = 'static'
-# AWS_S3_FILE_OVERWRITE = config('AWS_S3_FILE_OVERWRITE')
-# AWS_DEFAULT_ACL = config('AWS_DEFAULT_ACL')
-# AWS_S3_HOST = "s3.us-west-2.amazonaws.com"
-# AWS_S3_REGION_NAME = "us-west-2"
-# AWS_S3_ENDPOINT_URL = 'https://s3.amazonaws.com'
-
-
-# DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
-# STATICFILES_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
