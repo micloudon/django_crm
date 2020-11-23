@@ -1,0 +1,34 @@
+body{
+    background-color: #ebeff5;
+    height: 100%;
+    position: relative;
+}
+
+.main-container {
+    min-height: 100vh; /* will cover the 100% of viewport */
+    overflow: hidden;
+    display: block;
+    position: relative;
+    padding-bottom: 100px; /* height of your footer */
+   }
+
+
+#total-orders{
+    background-color: #4cb4c7;
+}
+
+
+#orders-delivered{
+    background-color: #7abecc;
+}
+
+#orders-pending{
+    background-color: #7CD1C0;
+}
+
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+   }

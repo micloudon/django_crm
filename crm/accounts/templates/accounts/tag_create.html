@@ -1,0 +1,25 @@
+{% extends 'accounts/base.html' %}
+{% load crispy_forms_tags %}
+{% block content %}
+
+<br>
+<div class="row">
+    <div class="col-md-6">
+        <div class="card card-body">
+        <h5>Create Tag:</h5>
+            <form action="" method="POST">
+                {% csrf_token %}
+                
+
+                    {{ form|crispy }}
+                    <hr>
+                <input type="submit" name="Submit">
+            </form>
+
+
+        </div>
+    </div>
+</div>
+
+
+{% endblock %}
