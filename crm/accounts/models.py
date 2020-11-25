@@ -52,4 +52,4 @@ class Order(models.Model):
     note = models.CharField(max_length=200, null=True).required=False
 
     def __str__(self):
-        return self.product.name
+        return self.product
