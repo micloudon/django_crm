@@ -1,6 +1,6 @@
 # Django Crm project  
 
-<span style="color:red">Site no longer live</span> 
+**<span style="color:red">Site no longer live:</span>** 
 
 ~~https://djangocrm.tk/register/~~
 
