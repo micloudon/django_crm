@@ -50,6 +50,3 @@ class Order(models.Model):
     status = models.CharField(max_length=200, null=True, choices=STATUS)
     quantity = models.PositiveIntegerField(null=True)
     note = models.CharField(max_length=200, null=True).required=False
-
-    def __str__(self):
-        return self.product

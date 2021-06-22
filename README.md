@@ -1,6 +1,8 @@
-Link to live site:
+# Django Crm project  
 
-https://djangocrm.tk/register/
+<span style="color:red">Site no longer live</span> 
+
+~~https://djangocrm.tk/register/~~
 
 (You can use a fake email, something like fakeemail@company.com to register, if you want to protect your privacy)
 
